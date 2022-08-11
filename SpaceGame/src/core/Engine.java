@@ -14,7 +14,6 @@ public class Engine extends StateBasedGame
 {
 	public final static int RESOLUTION_X = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
 	public final static int RESOLUTION_Y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-	public final static int FRAMES_PER_SECOND = 60;
 	
     public static final int GAME_ID  = 1;
     
@@ -31,7 +30,7 @@ public class Engine extends StateBasedGame
 	{
 		gc.setMinimumLogicUpdateInterval(17);
 		gc.setMaximumLogicUpdateInterval(17);
-		gc.setTargetFrameRate(GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDisplayMode().getRefreshRate());
+//		gc.setTargetFrameRate(GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDisplayMode().getRefreshRate());
 	    addState(game);
 	}
 
@@ -42,7 +41,6 @@ public class Engine extends StateBasedGame
 			System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
 		
 			appgc.setDisplayMode(RESOLUTION_X, RESOLUTION_Y, false);
-			appgc.setTargetFrameRate(FRAMES_PER_SECOND);
 			appgc.start();
 			appgc.setVSync(true);
 
