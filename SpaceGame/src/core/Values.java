@@ -2,8 +2,8 @@ package core;
 
 import java.util.ArrayList;
 
-import entitys.planets.Planet;
-import entitys.ships.Ship;
+import entities.planets.Planet;
+import entities.ships.Ship;
 import userInterface.Camera;
 
 public class Values {

@@ -3,7 +3,7 @@ package userInterface;
 import org.newdawn.slick.GameContainer;
 
 import core.Engine;
-import entitys.Entity;
+import entities.Entity;
 
 public class Camera {
 	float x, y;

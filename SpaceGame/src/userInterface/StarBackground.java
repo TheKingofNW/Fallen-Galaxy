@@ -6,7 +6,7 @@ import org.newdawn.slick.Graphics;
 
 import core.Engine;
 import core.Values;
-import entitys.Star;
+import entities.Star;
 
 public class StarBackground {
 
